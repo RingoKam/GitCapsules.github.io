@@ -103,20 +103,22 @@
                         <h2>Features</h2>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <h3>It gives you the ability to select your Git Repos Folder and create a bash script based on the Repo [master origin] URL and commit Id. The Bash script can be run on any machine and will…
                             </h3>
-                            <div class="card" style="padding: 10px 10px 5px 10px">
+                            <div>
                                 <ol>
                                     <li>Recreate the same folder structure and clone repos (if they doesn’t exist)</li>
                                     <li>Stash changes (if a repo exists and contains uncommitted changes)</li>
                                     <li>Checkout a detached head at the designated Commit Id</li>
                                 </ol>
                             </div>
+                        </div>
+                        <div class="col-md-6">
                             <h3>
                                 Every bash script generated can be saved as JSON and recreated. Next time you need another bash script with the same repos but with different commit, just refresh and Export.
-                                <a href="#example">See example.</a>
                             </h3>
+                            <h4 class="text-center">See <a href="#example">example</a> below</h4>
                         </div>
                     </div>
                 </div>
@@ -177,16 +179,6 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <h4>
-                                                    Click create and select your git projects directory. It can be a root directory of all your git repos or just one. Git Capsules will retrieve all valid git repos with [Remote Origin] and display on screen with folder name and current commit.
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="recreate">
-                                            <div class="col-md-8">
-                                                <img class="img-responsive" src="assets/img/recreate.gif" alt="recreate gif">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h4>
                                                     Open bash file. Press enter. wola! Bash will...
                                                 </h4>
                                                 <ol>
@@ -195,6 +187,14 @@
                                                     <li>Checkout the commit you specified in the app. </li>
                                                     <li>A report will be generated at the end.</li>
                                                 </ol>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="recreate">
+                                            <div class="col-md-8">
+                                                <img class="img-responsive" src="assets/img/recreate.gif" alt="recreate gif">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h4>Select bash script you wish to update/re-create. Click on the refresh button. It will refresh and grab current commit you are on. Follow step2 and step3 from then, file out form, export and run bash script.</h4>
                                             </div>
                                         </div>
                                     </div>
